@@ -1,0 +1,117 @@
+  body {
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+  }
+  
+  table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      padding: 0;
+      width: 650px;
+      table-layout: fixed;
+  }
+  
+  table tr {
+      background-color: #e6f2f5;
+      padding: .35em;
+      border-bottom: 2px solid #fff;
+  }
+  
+  table th,
+  table td {
+      padding: 1em 10px 1em 1em;
+      border-right: 2px solid #fff;
+  }
+  
+  table th {
+      font-size: 1.0em;
+  }
+  
+  table thead tr {
+      background-color: #167F92;
+      color: #fff;
+  }
+  
+  table tbody th {
+      background: #78bbc7;
+      color: #fff;
+  }
+  
+  .txt {
+      text-align: left;
+      font-size: 1.0em;
+  }
+  
+  .price {
+      text-align: right;
+      color: #167F92;
+      font-weight: bold;
+  }
+  
+  .angry {
+      text-align: right;
+      color: #167F92;
+      font-weight: bold;
+  }
+  
+  .non {
+      background: #fff
+  }
+  
+  table {
+      border: 0;
+      width: 100%
+  }
+  
+  table th {
+      background-color: #167F92;
+      display: block;
+      border-right: none;
+  }
+  
+  table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+  }
+  
+  table tr {
+      display: block;
+      margin-bottom: .625em;
+  }
+  
+  table td {
+      border-bottom: 1px solid #bbb;
+      display: block;
+      font-size: 1.0em;
+      text-align: right;
+      position: relative;
+      padding: .625em .625em .625em 4em;
+      border-right: none;
+  }
+  
+  table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      position: absolute;
+      left: 10px;
+      color: #167F92;
+  }
+  
+  table td:last-child {
+      border-bottom: 0;
+  }
+  
+  table tbody th {
+      color: #fff;
+  }
+  /* フォントの読み込み */
+  
+  .wf-roundedmplus1c {
+      font-family: "M PLUS Rounded 1c";
+  }

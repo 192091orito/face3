@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* メモ　z-index（要素の高さについて）
+↑
+|z-index=3 #screen 
+|z-index=2 #face_icon,#home_icon_area
+|z-index=0 
+|z-index=-1 #container
+↓ 
+*/
+
+
+/* タグ */
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0px;
+}
+
+
+/* id */
+
+#container {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+#video {
+    transform: scaleX(-1);
+    /* 左右反転させる */
+    /* widthとheigthを指定すると画面がおかしくなるよ */
+    background-size: cover;
+    display: block;
+    object-fit: fill;
+}
+
+#face_icon {
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    position: absolute;
+    top: 85%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+#home_icon_area {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#home_image {
+    height: 50px;
+    width: 50px;
+}
+
+#screen {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    /* 背景色と要素のブレンド方法を指定できる。screen:スクリーンを重ねたようになる */
+    mix-blend-mode: screen;
+}
+
+#CountDownBar {
+    width: 100%;
+    background-color: green;
+    height: 50px;
+}
+
+#CountDownBar_area {
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+}
+
+#text_area {
+    /* position: absolute; */
+    /*絶対配置*/
+    /* top: 0; */
+    font-size: 30px;
+    font-family: 'arial black', serif;
+    /* left: 0; */
+    /* right: 0; */
+    margin: auto;
+    background-color: white;
+    color: #ffffff;
+    height: 90px;
+}
+
+#text {
+    padding: auto 0;
+    padding-left: 50px;
+    color: black;
+}
+
+#Question_text {
+    padding: auto 0;
+    text-align: center;
+    color: black;
+}
+
+#StartButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    width: 400px;
+    display: inline-block;
+    /* padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+    border-bottom: solid 3px #5e7fca; */
+}
+
+#to_result {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    width: 400px;
+}
+
+#button_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    font-size: 35px;
+}
+
+
+/* クラス */
+
+.none {
+    display: none;
+}
+
+
+/* フォントの読み込み */
+
+.wf-roundedmplus1c {
+    font-family: "M PLUS Rounded 1c";
+}
